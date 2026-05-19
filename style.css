@@ -40,7 +40,7 @@ a {
 }
 
 .section-hero {
-    height: 100vh;
+    height: 70vh;
     /* 100% de la hauteur de l'écran */
     background-image: url(asset/hero.jpg);
     background-repeat: no-repeat;
@@ -51,6 +51,19 @@ a {
     justify-content: center;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
 .container-1000{
     max-width: 1000px;
     width: 100%;
@@ -58,6 +71,10 @@ a {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
 }
 
 .mt-20 {
@@ -74,6 +91,10 @@ a {
 
 .w-45{
     width: 45%;
+}
+
+.w-30{
+    width: 30%;
 }
 
 .w-20{
@@ -94,11 +115,33 @@ a {
 
 .card {
     background-color: plum;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     margin-bottom: 30px;
 }
 
+.card img {
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+}
+
 .padding-50 {
     padding: 50px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.bg-grey {
+    background-color: rgb(159, 146, 146);
+}
+
+.border-radius-20 {
+    border-radius: 20px;
+}
+
+.border-1 {
+    border: 1px solid black;
 }
