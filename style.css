@@ -60,6 +60,10 @@ a {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .align-center {
     align-items: center;
 }
@@ -97,6 +101,11 @@ a {
 
 .mb-60 {
     margin-bottom: 60px;
+}
+
+
+.ml-50 {
+    margin-left: 50px;
 }
 
 
