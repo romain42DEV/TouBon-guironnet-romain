@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="script.js" defer></script>
+    <script src="script-panier.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,8 +32,9 @@
 
         <nav>
             <ul>
-                <li><a href="">Accueil</a></li>
+                <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#produits">Nos produits</a></li>
+                <li><a href="#services">Nos services</a></li>
                 <li><a href="#avantages">Avantages Clients</a></li>
                 <li><a href="#temoignages">Témoignages</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -41,7 +43,7 @@
         
     </header>
 
-    <main>
+    <main id="accueil">
 
         <section class="section-hero"> <!-- section hero -->
 
@@ -56,8 +58,17 @@
 
         </section>
 
-        <section class="padding-50"> <!-- section produits -->
-            <h2>Nos produits</h2>
+        <section class="padding-50" id="produits"> <!-- section produits -->
+
+            <div class="shop flex space-between">
+                <h2>Nos produits</h2>
+
+                <div class="flex gap-12">
+                    <i class="ph-fill ph-shopping-cart-simple"></i>
+                    <p class="basket-number flex justify-center align-center">0</p>
+                </div>
+
+            </div>
 
             <div class="container-1000 flex space-between mt-20" id="produit-container"> <!-- div des produits -->
 
@@ -81,7 +92,7 @@
 
         </section>
 
-        <section class="padding-50"> <!-- section services -->
+        <section class="padding-50" id="services"> <!-- section services -->
             <h2>Nos services</h2>
 
             <div class="container-1000 flex space-between mt-20" id="produit-services"></div> <!-- div des services -->
@@ -100,7 +111,7 @@
 
         </section>
 
-        <section class="padding-50"> <!-- section avantages clients  -->
+        <section class="padding-50" id="avantages"> <!-- section avantages clients  -->
 
             <h2>Avantages clients</h2>
 
@@ -114,11 +125,12 @@
 
         </section>
 
-        <section class="padding-50"> <!-- section témoignages -->
+        <section class="padding-50" id="temoignages"> <!-- section témoignages -->
             <h2>Témoignages</h2>
 
-            <div class="container-1000 mt-10" id="produit-témoignages"> <!-- div témoignages -->
+            <div class="container-1000 flex space-between mt-20" id="produit-temoignages"> <!-- div témoignages -->
 
+                <!-- temoignage 1
                 <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
                     <div class="flex gap-10 align-center">
                         <div class="avatar">
@@ -139,7 +151,7 @@
                     </div>
                     <p class="mt-10">Experience : Macarons Variés</p>
                     <p class="mt-10">Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !</p>          
-                </div>
+                </div>-->
 
             </div>
 
@@ -147,7 +159,7 @@
 
     </main>
 
-    <footer>
+    <footer id="contact">
         <div class="container-1000 flex space-between"> <!-- div footer -->
                 <div class="flex w-45 mt-50"> <!-- div logo et reseaux-->
                     <div> <!-- div qui englobe le logo et le paragraphe -->
@@ -160,16 +172,16 @@
                     </div>
 
                     <div class="mb-30"> <!-- div qui englobe les logos -->
-                        <a href="">
+                        <a target="_blank" href="https://fr-fr.facebook.com">
                             <i class="ph-fill ph-facebook-logo"></i>
                         </a>
-                        <a href="">
+                        <a target="_blank" href="https://x.com/?lang=fr">
                             <i class="ph-fill ph-twitter-logo"></i>
                         </a>
-                        <a href="">
+                        <a target="_blank" href="https://fr.linkedin.com/">
                             <i class="ph-fill ph-linkedin-logo"></i>
                         </a>
-                        <a href="">
+                        <a target="_blank" href="https://www.instagram.com">
                             <i class="ph-fill ph-instagram-logo"></i>
                         </a>
                     </div>
