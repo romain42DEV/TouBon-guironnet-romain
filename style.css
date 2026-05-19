@@ -56,12 +56,16 @@ a {
     flex-wrap: wrap;
 }
 
-.space-between{
+.space-between {
     justify-content: space-between;
 }
 
-.align-center{
+.align-center {
     align-items: center;
+}
+
+.gap-10 {
+    gap: 10px;
 }
 
 .container-1000{
@@ -105,6 +109,11 @@ a {
     color: white;
 }
 
+.jaune {
+    color: yellow;
+}
+
+
 .bouton {
     border-radius: 4px;
     background-color: #353434;
@@ -135,7 +144,7 @@ a {
 }
 
 .bg-grey {
-    background-color: rgb(159, 146, 146);
+    background-color: #EDE9E6;
 }
 
 .border-radius-20 {
@@ -144,4 +153,9 @@ a {
 
 .border-1 {
     border: 1px solid black;
+}
+
+footer {
+    background-color: purple;
+    padding: 20px;
 }
