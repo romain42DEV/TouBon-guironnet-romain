@@ -63,3 +63,57 @@ boites.forEach(card=> {
     card.classList.toggle("box-shadow-rose")
   })
 })
+
+
+
+// je recupere le header
+let header = document.querySelector("header")
+// je recupere le hero
+let hero = document.querySelector(".section-hero")
+window.addEventListener("scroll",function(){
+    //J'ecoute le scroll :
+    console.log("coucou")
+
+    // si l'utilisateur a scroollé plus bas que le hero : 
+    if(window.scrollY > hero.clientHeight){
+        // je donne au header une classe qui change le bg
+        header.classList.add("bg-rose")
+    }else{
+        // sinon
+        // je lui enleve la classe qui change le bg
+        header.classList.remove("bg-rose")
+    }
+});
+
+
+
+
+
+
+
+// Tableau contenant les produits
+let produits = ["Éclair au Chocolat", "Macarons Variés", "Tarte aux Fruits Frais", "Millefeuille Vanille-Framboise", "Chausson aux Pommes"];
+
+// role : Fonction qui génère un nom aléatoire en associant un adjectif et un animal.
+// paramètre : tableauProduits - Liste des produits
+// return : rien car elle affiche
+
+function afficheProduit(tableauProduits) {
+
+    // Génère un index aléatoire pour choisir un produit
+    let nbrAlea1 = Math.floor(Math.random() * tableauProduits.length);
+
+    // Récupère l’adjectif correspondant à l’index aléatoire
+    let produitPioche = tableauProduits[nbrAlea1];
+
+    // Affiche le résultat dans l’élément HTML ayant la classe ".produit-result"
+    document.querySelector(".produit-result").innerHTML =
+        ` <span>${produitPioche}</span> pour vos servir`;
+}
+
+// Ajoute un écouteur d’événement sur le bouton ayant l’id "GoBtn"
+document.querySelector("#GoBtn").addEventListener("click", () => {
+
+    // Lance la fonction lorsqu’on clique sur le bouton
+    afficheProduit(produits);
+});
