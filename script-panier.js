@@ -90,7 +90,7 @@ window.addEventListener("scroll",function(){
 
 
 
-
+/*
 // Tableau contenant les produits
 let produits = ["Éclair au Chocolat", "Macarons Variés", "Tarte aux Fruits Frais", "Millefeuille Vanille-Framboise", "Chausson aux Pommes"];
 
@@ -117,3 +117,4 @@ document.querySelector("#GoBtn").addEventListener("click", () => {
     // Lance la fonction lorsqu’on clique sur le bouton
     afficheProduit(produits);
 });
+*/
