@@ -52,6 +52,7 @@ function changeColorCard() {
 changeColorCard();
 
 
+
 // affiche les div qui ont la classe card
 let boites = document.querySelectorAll(".card");
 console.log(boites);
