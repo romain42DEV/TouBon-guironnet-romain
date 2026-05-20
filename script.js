@@ -172,9 +172,8 @@
             <div class="mt-20"> <!-- avantages clients 1 -->
                     <p class="mt-20">${avantage}</p>
                 </div>
-            `
+            `;
 
         document.querySelector("#avantages-clients").innerHTML += avantagesClients;
-        })
-    };
-    
+        });
+    }    

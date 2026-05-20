@@ -1,4 +1,3 @@
-
 // Sélection de toutes les cartes produits dans la page
 let cards = document.querySelectorAll(".card");
 
@@ -52,18 +51,24 @@ function changeColorCard() {
 // Activation de la logique de sélection des cartes
 changeColorCard();
 
+
 // affiche les div qui ont la classe card
-let boites = document.querySelectorAll(".card")
+let boites = document.querySelectorAll(".card");
 console.log(boites);
 
 // je parcours mon tableau de div
 boites.forEach(card=> {
   card.addEventListener("click",function(){
     // j'ai la carte sur laquelle j'ai cliqué
-    console.log(card)
-    card.classList.toggle("box-shadow-rose")
-  })
-})
+    console.log(card);
+    card.classList.toggle("box-shadow-rose");
+  });
+});
+
+
+
+
+
 
 
 
