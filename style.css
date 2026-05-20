@@ -139,6 +139,10 @@ a {
     width: 10%;
 }
 
+.underline:hover {
+    text-decoration: underline;
+}
+
 
 .blanc {
     color: white;
@@ -227,4 +231,30 @@ span {
 footer {
     background-color: purple;
     padding: 20px;
+}
+
+
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

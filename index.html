@@ -20,6 +20,7 @@
 
     <script src="script.js" defer></script>
     <script src="script-panier.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
@@ -32,12 +33,12 @@
 
         <nav>
             <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#produits">Nos produits</a></li>
-                <li><a href="#services">Nos services</a></li>
-                <li><a href="#avantages">Avantages Clients</a></li>
-                <li><a href="#temoignages">Témoignages</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#accueil" class="underline">Accueil</a></li>
+                <li><a href="#produits" class="underline">Nos produits</a></li>
+                <li><a href="#services" class="underline">Nos services</a></li>
+                <li><a href="#avantages" class="underline">Avantages Clients</a></li>
+                <li><a href="#temoignages" class="underline">Témoignages</a></li>
+                <li><a href="#contact" class="underline">Contact</a></li>
             </ul>
         </nav>
         
@@ -138,7 +139,7 @@
 
         <section class="padding-50" id="temoignages"> <!-- section témoignages -->
             <h2>Témoignages</h2>
-
+                
             <div class="container-1000 flex space-between mt-20" id="produit-temoignages"> <!-- div témoignages -->
 
                 <!-- temoignage 1
@@ -164,6 +165,102 @@
                     <p class="mt-10">Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !</p>          
                 </div>-->
 
+            </div>
+
+        </section>
+
+        <section>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                
+                        <div class="flex justify-center">
+                            <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
+                                <div class="flex gap-10 align-center">
+                                    <div class="avatar">
+                                        <img src="asset/user3.png" alt="user 3">
+                                    </div>
+
+                                    <div>
+                                        <h4>Sophie</h4>
+                                        <div class="mt-10">
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                    
+                                            <p class="mt-10">note : 5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-10">Experience : Macarons Variés</p>
+                                <p class="mt-10">Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !</p>          
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="flex justify-center">
+                            <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
+                                <div class="flex gap-10 align-center">
+                                    <div class="avatar">
+                                        <img src="asset/user3.png" alt="user 3">
+                                    </div>
+
+                                    <div>
+                                        <h4>Sophie</h4>
+                                        <div class="mt-10">
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                    
+                                            <p class="mt-10">note : 5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-10">Experience : Macarons Variés</p>
+                                <p class="mt-10">Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !</p>          
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+
+                        <div class="flex justify-center">
+                            <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
+                                <div class="flex gap-10 align-center">
+                                    <div class="avatar">
+                                        <img src="asset/user3.png" alt="user 3">
+                                    </div>
+
+                                    <div>
+                                        <h4>Sophie</h4>
+                                        <div class="mt-10">
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                            <i class="ph-fill ph-star jaune"></i>
+                                    
+                                            <p class="mt-10">note : 5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mt-10">Experience : Macarons Variés</p>
+                                <p class="mt-10">Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !</p>          
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next bg-rose"></div>
+                <div class="swiper-button-prev bg-rose"></div>
             </div>
 
         </section>
@@ -219,5 +316,8 @@
 
     </footer>
     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>

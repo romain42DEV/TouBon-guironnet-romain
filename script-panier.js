@@ -1,3 +1,4 @@
+
 // Sélection de toutes les cartes produits dans la page
 let cards = document.querySelectorAll(".card");
 
@@ -108,7 +109,7 @@ function choisiProduit(tableauProduits) {
 
     // Affiche le résultat dans l’élément HTML ayant la classe ".produit-result"
     document.querySelector(".produit-result").innerHTML =
-        ` <span>${produitPioche}</span> pour vos servir`;
+        ` <span>${produitPioche}</span> pour vous servir`;
 }
 
 // Ajoute un écouteur d’événement sur le bouton ayant l’id "GoBtn"
@@ -116,4 +117,15 @@ document.querySelector("#GoBtn").addEventListener("click", () => {
 
     // Lance la fonction lorsqu’on clique sur le bouton
     choisiProduit(produits);
+});
+
+
+
+
+/* swiper */
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });

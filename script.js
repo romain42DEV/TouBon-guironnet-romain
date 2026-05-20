@@ -73,26 +73,26 @@
         tableauTemoignages.forEach(temoignage=> {
             let temoignageCard = `
             <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
-                    <div class="flex gap-10 align-center">
-                        <div class="avatar">
-                            <img src="asset/user3.png" alt="user 3">
-                        </div>
-                        <div>
-                            <h4>${temoignage.prenom}</h4>
-                            <div class="mt-10">
-                                <i class="ph-fill ph-star jaune"></i>
-                                <i class="ph-fill ph-star jaune"></i>
-                                <i class="ph-fill ph-star jaune"></i>
-                                <i class="ph-fill ph-star jaune"></i>
-                                <i class="ph-fill ph-star jaune"></i>
+                <div class="flex gap-10 align-center">
+                    <div class="avatar">
+                        <img src="asset/user3.png" alt="user 3">
+                    </div>
+                    <div>
+                        <h4>${temoignage.prenom}</h4>
+                        <div class="mt-10">
+                            <i class="ph-fill ph-star jaune"></i>
+                            <i class="ph-fill ph-star jaune"></i>
+                            <i class="ph-fill ph-star jaune"></i>
+                            <i class="ph-fill ph-star jaune"></i>
+                            <i class="ph-fill ph-star jaune"></i>
                                 
-                                <p class="mt-10">note : ${temoignage.note}</p>
-                            </div>
+                            <p class="mt-10">note : ${temoignage.note}</p>
                         </div>
                     </div>
-                    <p class="mt-10">Experience : ${temoignage.typeExperience}</p>
-                    <p class="mt-10">${temoignage.commentaire}</p>          
                 </div>
+                <p class="mt-10">Experience : ${temoignage.typeExperience}</p>
+                <p class="mt-10">${temoignage.commentaire}</p>          
+            <div>
             `
 
         document.querySelector("#produit-temoignages").innerHTML += temoignageCard;
