@@ -12,6 +12,10 @@
         afficheProduit(data.produits)
         afficheService(data.services)
         afficheTemoignage(data.temoignages)
+        afficheNomCommercial(data)
+        affichePraseDaccroche(data)
+        afficheTexteAppelAction(data)
+        afficheAvantagesClients(data.avantagesClients)
     });
 
 
@@ -94,3 +98,78 @@
         document.querySelector("#produit-temoignages").innerHTML += temoignageCard;
         })
     };
+
+
+
+
+
+    // role : récupérer le nomCommercial et l'afficher dans le Dom
+    // paramètre : data
+    // return : rien car elle affiche
+
+    function afficheNomCommercial (data) {
+        let nomCommercial = `
+        <h1 class="mb-60">${data.nomCommercial}</h1>
+        `
+        console.log(nomCommercial);
+
+    document.querySelector("#produit-titre").innerHTML += nomCommercial;
+    }
+
+
+
+
+
+    // role : récupérer la phrase d'accroche et l'afficher dans le Dom
+    // paramètre : data
+    // return : rien car elle affiche
+
+    function affichePraseDaccroche (data) {
+        let phraseDaccroche = `
+        <h2>${data.phraseAccroche}</h2>
+        `
+
+        console.log(phraseDaccroche);
+
+    document.querySelector("#produit-phraseDaccroche").innerHTML += phraseDaccroche;
+    }
+
+
+
+
+    // role : récupérer le texte Appel Action et l'afficher dans le Dom
+    // paramètre : data
+    // return : rien car elle affiche
+
+    function afficheTexteAppelAction (data) {
+        let TexteAppelAction = `
+        <a href="" class="bouton blanc">${data.texteAppelAction}</a>
+        `
+
+        console.log(TexteAppelAction);
+
+    document.querySelector("#produit-TexteAppelAction").innerHTML += TexteAppelAction;
+    }
+
+
+
+
+
+
+
+    // role : récupérer les avantages clients 1 par 1 et de les afficher dans le Dom
+    // paramètre : tableau des avantages clients
+    // return : rien car elle affiche
+
+    function afficheAvantagesClients(tableauAvantages) {
+        tableauAvantages.forEach(avantage => {
+            let avantagesClients = `
+            <div> <!-- avantage client 1 -->
+                    <p class="mt-20">${avantage}</p>
+                </div>
+            `
+
+        document.querySelector("#avantages-clients").innerHTML += avantagesClients;
+        })
+    };
+    

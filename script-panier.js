@@ -90,7 +90,7 @@ window.addEventListener("scroll",function(){
 
 
 
-/*
+
 // Tableau contenant les produits
 let produits = ["Éclair au Chocolat", "Macarons Variés", "Tarte aux Fruits Frais", "Millefeuille Vanille-Framboise", "Chausson aux Pommes"];
 
@@ -98,7 +98,7 @@ let produits = ["Éclair au Chocolat", "Macarons Variés", "Tarte aux Fruits Fra
 // paramètre : tableauProduits - Liste des produits
 // return : rien car elle affiche
 
-function afficheProduit(tableauProduits) {
+function choisiProduit(tableauProduits) {
 
     // Génère un index aléatoire pour choisir un produit
     let nbrAlea1 = Math.floor(Math.random() * tableauProduits.length);
@@ -108,13 +108,12 @@ function afficheProduit(tableauProduits) {
 
     // Affiche le résultat dans l’élément HTML ayant la classe ".produit-result"
     document.querySelector(".produit-result").innerHTML =
-        ` <span>${produitPioche}</span> pour vos servir`;
+        ` <p>${produitPioche}</p> pour vos servir`;
 }
 
 // Ajoute un écouteur d’événement sur le bouton ayant l’id "GoBtn"
 document.querySelector("#GoBtn").addEventListener("click", () => {
 
     // Lance la fonction lorsqu’on clique sur le bouton
-    afficheProduit(produits);
+    choisiProduit(produits);
 });
-*/
