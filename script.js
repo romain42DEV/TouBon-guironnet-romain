@@ -164,7 +164,7 @@
     function afficheAvantagesClients(tableauAvantages) {
         tableauAvantages.forEach(avantage => {
             let avantagesClients = `
-            <div> <!-- avantage client 1 -->
+            <div class="mt-20"> <!-- avantages clients 1 -->
                     <p class="mt-20">${avantage}</p>
                 </div>
             `

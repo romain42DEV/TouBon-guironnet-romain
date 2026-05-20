@@ -108,7 +108,7 @@ function choisiProduit(tableauProduits) {
 
     // Affiche le résultat dans l’élément HTML ayant la classe ".produit-result"
     document.querySelector(".produit-result").innerHTML =
-        ` <p>${produitPioche}</p> pour vos servir`;
+        ` <span>${produitPioche}</span> pour vos servir`;
 }
 
 // Ajoute un écouteur d’événement sur le bouton ayant l’id "GoBtn"
