@@ -135,7 +135,7 @@ a {
     width: 20%;
 }
 
-.w-10{
+.w-15{
     width: 15%;
 }
 
@@ -158,7 +158,7 @@ a {
 .bouton {
     border-radius: 4px;
     background-color: #353434;
-    padding: 9px 20px;
+    padding: 9px 18px;
     display: inline-block;
     font-weight: 400;
     cursor: pointer;
@@ -258,7 +258,7 @@ footer {
 }
 
 #temoignages {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 20px;
 }
 
 /* swiper */
