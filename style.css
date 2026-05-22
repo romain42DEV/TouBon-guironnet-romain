@@ -135,9 +135,11 @@ a {
     width: 20%;
 }
 
-.w-5{
-    width: 10%;
+.w-10{
+    width: 15%;
 }
+
+
 
 .underline:hover {
     text-decoration: underline;
@@ -239,7 +241,7 @@ span {
 
 footer {
     background-color: purple;
-    padding: 20px;
+    padding: 10px 10px 10px 10px;
 }
 
 
@@ -266,9 +268,7 @@ footer {
 }
 
 .swiper-slide {
-    text-align: center;
     font-size: 18px;
-    background: #444;
     display: flex;
     justify-content: center;
     align-items: center;

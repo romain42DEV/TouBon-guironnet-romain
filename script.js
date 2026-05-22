@@ -50,7 +50,7 @@
         tableauServices.forEach(service=> {
             let serviceCard = `
             <div class="card w-30 flex space-between align-center"> <!-- service 1 -->
-                    <div class="w-50">
+                    <div>
                         <h4>${service.nom}</h4>
                         <p class="mt-10">${service.description}</p>
                         <a href="" class="bouton blanc mt-20 ml-50">voir le service</a>
