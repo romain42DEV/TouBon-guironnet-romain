@@ -135,3 +135,17 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+
+const container = document.querySelector("#produit-container");
+
+container.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+
+    if (!card) return;
+
+    card.classList.toggle("box-shadow-rose");
+
+    nbrProducts.textContent =
+        document.querySelectorAll(".box-shadow-rose").length;
+});
