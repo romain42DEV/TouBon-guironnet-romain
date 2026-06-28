@@ -70,39 +70,47 @@
     // return : rien
 
     function afficheTemoignage(tableauTemoignages) {
-        tableauTemoignages.forEach(temoignage=> {
+    tableauTemoignages.forEach(temoignage => {
+
+        if (temoignage.note >= 4) {
+
+            let etoiles = "";
+
+            for (let i = 1; i <= 5; i++) {
+                if (i <= temoignage.note) {
+                    etoiles += `<i class="ph-fill ph-star jaune"></i>`;
+                } else {
+                    etoiles += `<i class="ph ph-star jaune"></i>`;
+                }
+            }
+
             let temoignageCard = `
             <div class="swiper-slide">
-
                 <div class="flex justify-center">
                     <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
                         <div class="flex gap-10 align-center">
                             <div class="avatar">
-                                <img src="asset/${temoignage.image}" alt="user 3">
+                                <img src="asset/${temoignage.image}" alt="user">
                             </div>
                             <div>
                                 <h4>${temoignage.prenom}</h4>
                                 <div class="mt-10">
-                                    <i class="ph-fill ph-star jaune"></i>
-                                    <i class="ph-fill ph-star jaune"></i>
-                                    <i class="ph-fill ph-star jaune"></i>
-                                    <i class="ph-fill ph-star jaune"></i>
-                                    <i class="ph-fill ph-star jaune"></i>
-                                
-                                    <p class="mt-10">note : ${temoignage.note}</p>
+                                    ${etoiles}
+                                    <p class="mt-10">Note : ${temoignage.note}/5</p>
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-10">Experience : ${temoignage.typeExperience}</p>
-                        <p class="mt-10">${temoignage.commentaire}</p>          
-                    <div>
+                        <p class="mt-10">Expérience : ${temoignage.typeExperience}</p>
+                        <p class="mt-10">${temoignage.commentaire}</p>
+                    </div>
                 </div>
             </div>
-            `
-        
-        document.querySelector("#produit-temoignages").innerHTML += temoignageCard;
-        })
-    };
+            `;
+
+            document.querySelector("#produit-temoignages").innerHTML += temoignageCard;
+        }
+    });
+}
 
 
 
