@@ -78,7 +78,7 @@
                     <div class="w-30 bg-grey padding-20 border-radius-20 border-1">
                         <div class="flex gap-10 align-center">
                             <div class="avatar">
-                                <img src="asset/user3.png" alt="user 3">
+                                <img src="asset/${temoignage.image}" alt="user 3">
                             </div>
                             <div>
                                 <h4>${temoignage.prenom}</h4>
@@ -99,7 +99,7 @@
                 </div>
             </div>
             `
-
+        
         document.querySelector("#produit-temoignages").innerHTML += temoignageCard;
         })
     };

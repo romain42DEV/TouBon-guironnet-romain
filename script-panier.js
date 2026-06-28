@@ -99,7 +99,7 @@ window.addEventListener("scroll",function(){
 
 
 // Tableau contenant les produits
-let produits = ["Éclair au Chocolat", "Macarons Variés", "Tarte aux Fruits Frais", "Millefeuille Vanille-Framboise", "Chausson aux Pommes"];
+let produits = ["Éclair au Chocolat", "Macarons Variés", "Tarte aux Fruits Frais", "Millefeuille Vanille-Framboise", "Chausson aux Pommes", "Tiramisu"];
 
 // role : Fonction qui génère un nom aléatoire en associant un adjectif et un animal.
 // paramètre : tableauProduits - Liste des produits
@@ -137,7 +137,10 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+
+
 const container = document.querySelector("#produit-container");
+const containe = document.querySelector("#produit-services");
 
 container.addEventListener("click", (e) => {
     const card = e.target.closest(".card");
@@ -146,6 +149,15 @@ container.addEventListener("click", (e) => {
 
     card.classList.toggle("box-shadow-rose");
 
-    nbrProducts.textContent =
-        document.querySelectorAll(".box-shadow-rose").length;
+    nbrProducts.textContent = document.querySelectorAll(".box-shadow-rose").length;
+});
+
+containe.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+
+    if (!card) return;
+
+    card.classList.toggle("box-shadow-rose");
+
+    nbrProducts.textContent = document.querySelectorAll(".box-shadow-rose").length;
 });

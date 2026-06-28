@@ -32,6 +32,11 @@
       "nom": "Chausson aux Pommes",
       "description": "Retrouvez le plaisir réconfortant de notre chausson aux pommes. Une pâte feuilletée croustillante et une garniture généreuse aux pommes fondantes.",
       "imageurl": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/chausson-pommes.webp"
+    },
+    {
+      "nom": "Tiramisu",
+      "description": "Succombez à notre tiramisu maison. Une crème onctueuse au mascarpone, des biscuits délicatement imbibés de café et une fine touche de cacao pour un dessert tout en douceur.",
+      "imageurl": "https://media.istockphoto.com/id/1061450296/fr/photo/portion-de-dessert-tiramisu.jpg?b=1&s=612x612&w=0&k=20&c=kweb00bte2vOOvlrFYx1KGmpZnEX6qk_kyp0TASIsWQ="
     }
   ],
   "services": [
@@ -50,18 +55,21 @@
   ],
   "temoignages": [
     {
+      "image": "user3.png",
       "prenom": "Sophie",
       "typeExperience": "Macarons Variés",
       "commentaire": "Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !",
       "note": 5
     },
     {
+      "image": "user1.png",
       "prenom": "Pierre",
       "typeExperience": "Cours de Pâtisserie",
       "commentaire": "Les cours de pâtisserie chez TouBon sont divertissants et instructifs. J'ai appris à créer des desserts incroyables. Une expérience enrichissante !",
       "note": 4
     },
     {
+      "image": "user2.png",
       "prenom": "Claire",
       "typeExperience": "Gâteau Sur Mesure",
       "commentaire": "TouBon a créé le gâteau sur mesure parfait pour mon anniversaire. Non seulement il était magnifique, mais il était aussi délicieux. Un grand merci !",
